@@ -1,22 +1,7 @@
-# PortSwigger Academy Labs - Server-Side Vulnerabilities
+# Server-Side Vulnerabilities
 
-This repository documents my solutions for the PortSwigger Academy's **Server-Side Vulnerabilities** learning path. Below, you’ll find detailed steps and explanations for each lab, demonstrating my approach to identifying and exploiting these vulnerabilities.
+This learning path introduces a range of common server-side vulnerabilities. It's ideal for those new to web security, offering an overview of various vulnerabilities and demonstrating how attackers might identify and exploit them in real-world systems.
 
-## Path Traversal - Lab 1: File Path Traversal, Simple Case
+## Overview
 
-### Objective
-In this lab, we exploit a path traversal vulnerability to access sensitive files on the server.
-
-### Steps
-
-1. **Understanding the Vulnerability**
-   - The application allows unsanitized user input to access files on the server.
-
-2. **Exploit the Vulnerability**
-   - We utilize the `loadImage` function in the HTML, which processes file paths without proper validation.
-   - By manipulating the file path, we request the `/etc/passwd` file, which is a common target for path traversal attacks.
-
-3. **Payload Example**
-   ```http
-   GET /loadImage?filename=../../../../etc/passwd HTTP/1.1
-   Host: vulnerable-website.com
+In this folder, you'll find detailed documentation and solutions for labs related to server-side vulnerabilities from the PortSwigger Academy. Each lab provides step-by-step explanations and practical examples of how to exploit these vulnerabilities.
