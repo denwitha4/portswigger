@@ -1,5 +1,4 @@
-# Path Traversal Exploit Lab
-
+# File path traversal, simple case
 In this lab, we'll exploit a web application's lack of defenses against path traversal attacks.
 
 ## Steps
